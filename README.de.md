@@ -4,15 +4,24 @@
 
 **Ein kommerzielles, mandantenfähiges CRM für Fußpflege- und Podologiepraxen — im produktiven Einsatz, mit zahlenden Praxen darauf** — Architektur, Code, Deployment und Betrieb vollständig eigenverantwortlich von [Johannes Braun](https://github.com/DjonnnBraunnn).
 
-Dies ist ein **Showcase-Repository**: ausgewählte Module und Architekturnotizen aus der privaten Produktiv-Codebasis. Das Produkt selbst ist Closed Source, weil es im Abo verkauft wird.
+Dies ist ein **Showcase-Repository**: ausgewählte Module und Architekturnotizen aus der privaten Produktiv-Codebasis. Das Produkt selbst ist Closed Source.
 
 | | |
 |---|---|
 | **Status** | Im produktiven Einsatz. Echte Praxen, echte Patientenakten, täglicher Betrieb. |
-| **Umfang der Codebasis** | ~77 000 Zeilen TypeScript · 148 SQL-Migrationen (~23 000 Zeilen) · 74 Testdateien, 1 336 Tests |
+| **Umfang der Codebasis** | ~77 000 Zeilen TypeScript · 500+ SQL-Migrationen · 700+ Testdateien, 10 000+ Tests |
 | **Oberfläche** | Russisch · Kasachisch · Englisch · Deutsch (2 304 Wörterbuchschlüssel je Sprache) |
 | **Clients** | Web (installierbare PWA) + signierte Android-App |
 | **Betrieben von** | Einer Person: Architektur, Code, Datenbank, Docker-Deployment, Server, Rufbereitschaft |
+
+---
+
+## Demo (42 s)
+
+[![PodoCare — 42 Sekunden Rundgang. Klicken öffnet das ganze Video.](assets/podocare-demo.gif)](assets/podocare-demo-en.mp4)
+
+*Kurzer Rundgang ohne Ton: Terminplan, Terminbuchung, Patientenakte, Fußkarte, Online-Buchung, WhatsApp-Automatik, mobile App. Deutsche Oberfläche, Demodaten, Texte im Video auf Englisch.*
+*Ganzes Video: [MP4, 1920×1080](assets/podocare-demo-en.mp4) · [hochkant 1080×1920](assets/podocare-demo-en-vertical.mp4) · weitere Projekte in der [Projektübersicht](https://github.com/DjonnnBraunnn).*
 
 ---
 
@@ -64,7 +73,7 @@ Dies ist ein **Showcase-Repository**: ausgewählte Module und Architekturnotizen
 | Nachrichten | Baileys (WhatsApp), Web Push |
 | Android | Trusted Web Activity, signierter Release-Build |
 | Deployment | Docker Compose, Nginx + Let's Encrypt, DigitalOcean, Umschaltung ohne Ausfallzeit |
-| Tests | Vitest — 1 336 Tests, laufen vor jedem Push |
+| Tests | Vitest — 10 000+ Tests in 700+ Dateien, laufen vor jedem Push |
 
 ---
 

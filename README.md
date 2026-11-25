@@ -4,15 +4,24 @@
 
 **A commercial multi-tenant CRM for podiatry practices — in production, with paying clinics on it** — designed, built, deployed and operated end-to-end by [Johannes Braun](https://github.com/DjonnnBraunnn).
 
-This is a **showcase repository**. It holds selected modules and architecture notes from the private production codebase; the product itself is closed-source because it is sold by subscription.
+This is a **showcase repository**. It holds selected modules and architecture notes from the private production codebase; the product itself is closed-source.
 
 | | |
 |---|---|
 | **Status** | In production. Real clinics, real patient records, daily use. |
-| **Scale of the codebase** | ~77 000 lines of TypeScript · 148 SQL migrations (~23 000 lines) · 74 test files, 1 336 tests |
+| **Scale of the codebase** | ~77 000 lines of TypeScript · 500+ SQL migrations · 700+ test files, 10 000+ tests |
 | **Interface** | Russian · Kazakh · English · German (2 304 dictionary keys per language) |
 | **Clients** | Web (installable PWA) + a signed Android app |
 | **Operated by** | One person: architecture, code, database, Docker deployment, server, on-call |
+
+---
+
+## Demo (42 s)
+
+[![PodoCare — 42-second tour. Click to open the full video.](assets/podocare-demo.gif)](assets/podocare-demo-en.mp4)
+
+*A short tour without sound: calendar, booking, patient record, foot map, online booking, WhatsApp automation, mobile app. German interface, demo data.*
+*Full video: [MP4, 1920×1080](assets/podocare-demo-en.mp4) · [vertical 1080×1920](assets/podocare-demo-en-vertical.mp4) · more projects in the [project overview](https://github.com/DjonnnBraunnn).*
 
 ---
 
@@ -64,7 +73,7 @@ This is a **showcase repository**. It holds selected modules and architecture no
 | Messaging | Baileys (WhatsApp), Web Push |
 | Android | Trusted Web Activity, signed release build |
 | Deployment | Docker Compose, Nginx + Let's Encrypt, DigitalOcean, zero-downtime port switch |
-| Tests | Vitest — 1 336 tests, run before every push |
+| Tests | Vitest — 10 000+ tests in 700+ files, run before every push |
 
 ---
 
